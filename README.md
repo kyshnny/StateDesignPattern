@@ -27,6 +27,7 @@ Implement the State pattern to improve code maintainability and flexibility:
  example, the ActiveState class would allow deposits and withdrawals, while the
  ClosedState wouldn't allow any transactions.
  4. Update Account Class:
+ 
  ○ Include attributes for accountNumber and balance.
  
  ○ Remove state-specific logic from the Account class.
@@ -36,6 +37,7 @@ Implement the State pattern to improve code maintainability and flexibility:
  ○ Delegate actions like deposit, withdraw, activate, suspend, and close to the current state object through its corresponding methods.
 
 Logic:
+
 If the account is active
 You can either suspend it or close it.
 
