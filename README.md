@@ -49,6 +49,7 @@ If the account is closed,
 You can neither suspend nor activate it.
 No deposits and withdrawals allowed.
 
+
 Composition of Account:
 
 attributes:
@@ -74,5 +75,6 @@ activate(): void
 close() : void
 
 toString() // displays account number and balance
+
 
 Note: No if-else, switch will be used
