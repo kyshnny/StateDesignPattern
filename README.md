@@ -5,8 +5,10 @@ suspended, and closed. Each state has specific rules and restrictions regarding 
 operations, and accounts have associated attributes like account number and balance.
 
  ● Active accounts: Allow deposits and withdrawals.
+ 
  ● Suspended accounts: Disallow deposits and withdrawals transactions, but
  allow viewing account information.
+ 
  ● Closed accounts: Disallow all transactions and viewing of account information.
 
 Currently, the system relies on conditional statements within the Account class to check
@@ -26,8 +28,11 @@ Implement the State pattern to improve code maintainability and flexibility:
  ClosedState wouldn't allow any transactions.
  4. Update Account Class:
  ○ Include attributes for accountNumber and balance.
+ 
  ○ Remove state-specific logic from the Account class.
+ 
  ○ Introduce a reference to the current AccountState object.
+ 
  ○ Delegate actions like deposit, withdraw, activate, suspend, and close to the current state object through its corresponding methods.
 
 Logic:
